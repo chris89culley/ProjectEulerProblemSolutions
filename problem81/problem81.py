@@ -22,11 +22,7 @@ def getMinPath(arr):
 			if x is 0 and y is 0:
 				continue
 			if x is 0:
-				print "before"
-				print arr[y][x]
-				print arr[y-1][x]
 				arr[y][x] += arr[y-1][x]
-				print "after"
 				print arr[y][x]
 			elif y is 0:
 				arr[y][x] += arr[y][x-1]
